@@ -4,21 +4,14 @@ let tiles = [];
 const header = document.getElementById("header-element");
 const boardContainerEl = document.getElementById("board-container");
 
-function createTileEls() {
+function createSquareEls() {
   for (i = 0; i < board.length; i++) {
-    let newTile = document.createElement("div");
-    newTile.setAttribute("class", "square");
-    newTile.textContent = "A";
-    boardContainerEl.appendChild(newTile);
-    console.log(newTile);
-    tiles.push(newTile);
+    let newSquare = document.createElement("div");
+    newSquare.setAttribute("class", "square");
+    newSquare.textContent = "";
+    boardContainerEl.appendChild(newSquare);
+    tiles.push(newSquare);
   }
 }
 
-function changeText() {
-  header.textContent = "NEW TEXT";
-}
-
-createTileEls();
-
-changeText();
+createSquareEls();

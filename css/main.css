@@ -1,0 +1,11 @@
+.square {
+  min-width: 40px;
+  min-height: 40px;
+  background-color: blue;
+  border: solid black 0.1px;
+}
+
+#board-container {
+  display: grid;
+  grid-template-columns: repeat(15, 40px);
+}
